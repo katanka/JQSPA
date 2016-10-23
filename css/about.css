@@ -2,6 +2,8 @@
 	background-color: #5a8f29;
 	color: white;
 	height: 100%;
+	text-align: center;
+	padding-top: 150px;
 }
 
 .img-circle {
@@ -17,7 +19,6 @@
 }
 
 #name {
-	text-align: center;
 	font-size: 50px;
 	margin: 30px;
 }
@@ -29,4 +30,8 @@ hr {
 hr:after {
 	background: #5a8f29; 
 	color: white;
+}
+
+#description {
+	margin-bottom: 30px;
 }
