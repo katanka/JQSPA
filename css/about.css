@@ -21,10 +21,11 @@
 	margin: 30px;
 }
 
-hr { 
-  color: white;
+hr {
+	border-top: medium double white; 
+	color: white;
 } 
 hr:after {
-  background: #5a8f29; 
-  color: white;
+	background: #5a8f29; 
+	color: white;
 }
