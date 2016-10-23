@@ -1,8 +1,11 @@
 var routes = {
+	"main": {
+		"html": "pages/main.html"
+	},
 	"page1": {
-		"html": ["pages/page1.html"]
+		"html": "pages/page1.html"
 	},
 	"page2": {
-		"html": ["pages/page2.html"]
+		"html": "pages/page2.html"
 	},
 };

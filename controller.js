@@ -6,7 +6,7 @@ $("#header > a").click(function (event) {
 	}
 	event.preventDefault();
 
-	var htmlfile = routes[target].html[0];
+	var htmlfile = routes[target].html;
 
 	$.get(htmlfile, function(data) {
 		$("#content").html(data);
