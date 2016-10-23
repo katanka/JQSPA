@@ -1,11 +1,12 @@
 var routes = {
-	"main": {
-		"html": "pages/main.html"
+	"about": {
+		"html": "pages/about.html",
+		"css": "css/about.css"
 	},
-	"page1": {
-		"html": "pages/page1.html"
+	"projects": {
+		"html": "pages/projects.html"
 	},
-	"page2": {
-		"html": "pages/page2.html"
+	"experience": {
+		"html": "pages/experience.html"
 	}
 };
