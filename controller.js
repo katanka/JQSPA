@@ -9,6 +9,6 @@ $("#header > a").click(function (event) {
 	var htmlfile = routes[target].html[0];
 
 	$.get(htmlfile, function(data) {
-		$("#content").html(htmlfile);
+		$("#content").html(data);
 	});
 });
