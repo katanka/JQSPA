@@ -1,0 +1,8 @@
+var routes = {
+	"page1": {
+		"html": ["pages/page1.html"]
+	},
+	"page2": {
+		"html": ["pages/page2.html"]
+	},
+};
