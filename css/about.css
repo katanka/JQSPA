@@ -1,5 +1,5 @@
 #content {
-	background-color: green;
+	background-color: #5a8f29;
 }
 
 .img-circle {
@@ -12,4 +12,9 @@
 	display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#name {
+	text-align: center;
+	font-size: 50px;
 }
