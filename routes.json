@@ -4,7 +4,8 @@ var routes = {
 		"css": "css/about.css"
 	},
 	"projects": {
-		"html": "pages/projects.html"
+		"html": "pages/projects.html",
+		"css": "css/skeleton.css"
 	},
 	"experience": {
 		"html": "pages/experience.html"
