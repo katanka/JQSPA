@@ -1,16 +1,20 @@
 var routes = {
-	"about": {
-		"html": "pages/about.html",
-		"css": "css/about.css"
+	"home": {
+		"title": "Andrew Gleeson",
+		"html": "pages/home.html",
+		"css": "css/home.css"
 	},
 	"projects": {
+		"title": "Projects",
 		"html": "pages/projects.html",
 		"css": "css/projects.css"
 	},
 	"experience": {
+		"title": "Experience",
 		"html": "pages/experience.html"
 	},
 	"education": {
+		"title": "Education",
 		"html": "pages/education.html"
 	}
 };

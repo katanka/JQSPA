@@ -3,7 +3,13 @@ $(document).ready(function() {
 	var current_route;
 	var current_added_elements = [];
 
-	load_route("about");
+	var hash = window.location.hash.substring(1);
+	
+	if (hash in routes) {
+		load_route(hash);
+	} else {
+		load_route("home");
+	}
 
 $(".link").click(process_click);
 
@@ -27,6 +33,8 @@ function load_route (route) {
 		$("#maincss").after(css_link);
 	}
 
+	$(document).prop('title', routes[route].title);
+
 	var htmlfile = routes[route].html;
 	$.get(htmlfile, function(data) {
 		$("#content").html(data);
@@ -34,6 +42,7 @@ function load_route (route) {
 	});
 
 	current_route = route;
+	window.location.hash = route;
 }
 
 function process_click(event) {
