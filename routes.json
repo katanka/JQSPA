@@ -9,5 +9,8 @@ var routes = {
 	},
 	"experience": {
 		"html": "pages/experience.html"
+	},
+	"education": {
+		"html": "pages/education.html"
 	}
 };
