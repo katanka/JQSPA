@@ -5,20 +5,11 @@ $(document).ready(function() {
 
 	load_route("about");
 
-$(".link").click(function (event) {
-	var target = event.target.attributes["href"].nodeValue;
-	// if it's not a valid route, follow the link
-
-	if (!(target in routes)) {
-		log("Not a route, following link");
-		return;
-	}
-
-	event.preventDefault();
-	load_route(target);
-});
+$(".link").click(process_click);
 
 function load_route (route) {
+
+	$("#content").html("");
 
 	for (var i = 0; i < current_added_elements.length; i++) {
 		$(current_added_elements[i]).remove();
@@ -37,12 +28,26 @@ function load_route (route) {
 	}
 
 	var htmlfile = routes[route].html;
-
 	$.get(htmlfile, function(data) {
 		$("#content").html(data);
+		$("#content .link").click(process_click);
 	});
 
 	current_route = route;
+}
+
+function process_click(event) {
+	console.log(event.target);
+	var target = event.target.attributes["href"].nodeValue;
+	// if it's not a valid route, follow the link
+
+	if (!(target in routes)) {
+		console.log("Not a route, following link");
+		return;
+	}
+
+	event.preventDefault();
+	load_route(target);
 }
 
 });
